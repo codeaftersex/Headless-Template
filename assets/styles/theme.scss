@@ -1,37 +1,64 @@
-// You can override the default settings using the SCSS with on the @forward rule for "./settings".
-// More information can be found here https://sass-lang.com/documentation/at-rules/use/#configuration
+// Modern, sade tema konfigürasyonu
+@forward "./settings" with (
+  // Base colors - Modern sade tema
+  $pure-black: #0a0a0a,
+  $pure-white: #ffffff,
 
-//  Example of overriding the default settings:
-//
+  // Background - Gradient ve modern renkler
+  $background-100: #0f0f0f,
+  $background-200: #1a1a1a,
 
-// @forward "./settings" with (
-//   // Base settings
-//   $pure-black: #000000,
-//   $pure-white: #ffffff,
+  // Modern color palette
+  $c-100: #1e1e1e,
+  $c-200: #2a2a2a,
+  $c-300: #3a3a3a,
+  $c-400: #4a4a4a,
+  $c-500: #6a6a6a,
+  $c-600: #8a8a8a,
+  $c-700: #aaaaaa,
+  $c-800: #cccccc,
+  $c-900: #e8e8e8,
 
-//   // Background
-//   $background-100: #ffffff,
-//   $background-200: #f2f2f2,
+  // Modern accent colors
+  $primary: #6366f1,
+  $primary-dark: #4f46e5,
+  
+  $secondary: #f8fafc,
+  $secondary-dark: #e2e8f0,
 
-//   // Colour pallette
-//   $c-100: #e5e5e5,
-//   $c-200: #d1cfc6,
-//   $c-300: #cccccc,
-//   $c-400: #b2b2b2,
-//   $c-500: #7f7f7f,
-//   $c-600: #666666,
-//   $c-700: #4d4d4d,
-//   $c-800: #333333,
-//   $c-900: #1a1a1a,
+  $tertiary: #374151,
+  $tertiary-dark: #1f2937,
 
-//   $primary: #D81B60,
+  $success: #10b981,
+  $success-dark: #059669,
 
-//   $text-high-emphasis-color: #000000,
-//   $text-base-color: #000000,
+  $danger: #ef4444,
 
-//   // Components
-//   $modal-close-color: #000000,
-//   $loader-color: rgba(0, 0, 0, 0.6),
-// );
+  // Modern text colors
+  $text-high-emphasis-color: #f9fafb,
+  $text-medium-emphasis-color: #d1d5db,
+  $text-base-color: #f9fafb,
+  $text-link-color: #6366f1,
 
-@forward "./settings";
+  // Modern component styling
+  $modal-close-color: #f9fafb,
+  $loader-color: #6366f1,
+  
+  // Modern borders and radius
+  $border-radius-base: 12px,
+  $btn-border-radius: 12px,
+  $input-border-radius: 12px,
+  
+  // Modern hero
+  $hero-banner-height: 500px,
+  $hero-gradient: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%),
+  
+  // Modern package cards
+  $package-card-border-radius: 16px,
+  $package-card-bg: #1a1a1a,
+  $package-card-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
+  
+  // Modern header
+  $header-bg: rgba(15, 15, 15, 0.95),
+  $header-sticky-bg: rgba(15, 15, 15, 0.98),
+);
