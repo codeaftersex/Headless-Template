@@ -1,20 +1,20 @@
 // https://nuxt.com/docs/guide/directory-structure/app-config
 // See index.d.ts for the full list of available options
 export default defineAppConfig({
-    titlePrefix: "FiveM Elite Store",
-    storeName: "FiveM Elite Store",
+    titlePrefix: "Premium FiveM Store",
+    storeName: "Premium FiveM Store",
     // Require the user to login before they add items?
     auth: true,
     // Use external auth methods, e.g. CFX, Steam (Set to false for minecraft stores)
     authExternal: true,
     // The unique ID of the store
-    storeId: 12345,
+    storeId: 1,
     // A link to your main site (optional)
-    mainSiteUrl: "https://fivem-elite.com",
+    mainSiteUrl: "https://premium-fivem.com",
     // A discord invite url (optional)
-    discordUrl: "https://discord.gg/fivem-elite",
+    discordUrl: "https://discord.gg/premium-fivem",
     // A IP of your server which to display (optional)
-    serverIp: "connect fivem-elite.com",
+    serverIp: "connect premium-fivem.com",
     // Reveal the sidebar when an item is added to the cart?
     showCartOnAdd: true,
     // Show confetti after checkout?

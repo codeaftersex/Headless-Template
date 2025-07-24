@@ -134,6 +134,67 @@
             </div>
         </section>
 
+        <!-- Analytics Dashboard Section -->
+        <section class="analytics-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Store Analytics</h2>
+                    <p class="section-subtitle">Real-time insights and statistics</p>
+                </div>
+                
+                <div class="analytics-grid">
+                    <!-- Stats Cards -->
+                    <div class="stats-row">
+                        <StatsCard 
+                            icon="users" 
+                            :value="15247" 
+                            label="Total Customers" 
+                            change="+12.5%" 
+                            changeType="positive" 
+                        />
+                        <StatsCard 
+                            icon="shopping-cart" 
+                            :value="8932" 
+                            label="Total Orders" 
+                            change="+8.2%" 
+                            changeType="positive" 
+                        />
+                        <StatsCard 
+                            icon="package" 
+                            :value="156" 
+                            label="Active Products" 
+                            change="+3" 
+                            changeType="positive" 
+                        />
+                        <StatsCard 
+                            icon="star" 
+                            :value="4.9" 
+                            label="Average Rating" 
+                            change="+0.2" 
+                            changeType="positive" 
+                        />
+                    </div>
+                    
+                    <!-- Recent Payments & Top Customers -->
+                    <div class="analytics-row">
+                        <div class="analytics-card">
+                            <RecentPayments />
+                        </div>
+                        <div class="analytics-card">
+                            <TopCustomers />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Community Section -->
+        <section class="community-section">
+            <div class="container">
+                <DiscordBanner :discordUrl="appConfig.discordUrl" />
+            </div>
+        </section>
+
         <!-- Team Section -->
         <section class="team-section">
             <div class="container">
@@ -901,6 +962,44 @@ const getParticleStyle = (index: number) => {
         z-index: -1;
         filter: blur(10px);
     }
+}
+
+// Analytics Section
+.analytics-section {
+    padding: 8rem 0;
+    background: linear-gradient(135deg, $background-100 0%, $background-200 100%);
+}
+
+.analytics-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.analytics-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+    @include tools.media-breakpoint-up("lg") {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.analytics-card {
+    height: 100%;
+}
+
+// Community Section
+.community-section {
+    padding: 4rem 0;
+    background: $background-200;
 }
 
 // Team Section

@@ -46,7 +46,11 @@ export default defineI18nConfig(() => ({
                     customers: "Happy Customers",
                     resources: "Premium Resources",
                     servers: "Active Servers",
-                    support: "24/7 Support"
+                    support: "24/7 Support",
+                    total_customers: "Total Customers",
+                    total_orders: "Total Orders", 
+                    active_products: "Active Products",
+                    average_rating: "Average Rating"
                 }
             },
             buttons: {
