@@ -1,31 +1,53 @@
 export default defineI18nConfig(() => ({
     legacy: false,
-    locale: "en-US",
+    locale: "en",
     numberFormats: {
-        "en-US": {
+        "en": {
             currency: {
                 style: "currency",
                 currency: "USD",
                 notation: "standard",
             },
         },
-        "de-DE": {
+        "tr": {
             currency: {
                 style: "currency",
-                currency: "EUR",
+                currency: "TRY",
                 notation: "standard",
             },
         },
     },
     messages: {
-        "en-US": {
-            store_name: "Example Store",
-            play: "example.play.com",
+        "en": {
+            store_name: "FiveM Elite Store",
+            play: "connect fivem-elite.com",
+            nav: {
+                home: "Home",
+                categories: "Categories",
+                open_source: "Open Source",
+                escrow: "Escrow Services",
+                teammates: "Our Team",
+                workers: "Developers",
+                refund_policy: "Refund Policy",
+                terms: "Terms of Service",
+                privacy: "Privacy Policy",
+                support: "Support",
+                language: "Language"
+            },
             index: {
                 hero: {
-                    title: "Hero Banner",
-                    subtitle: "CHECK OUT THE LATEST OFFERS",
+                    title: "Premium FiveM Resources",
+                    subtitle: "ELEVATE YOUR ROLEPLAY EXPERIENCE",
+                    description: "Discover high-quality scripts, vehicles, maps, and exclusive content for your FiveM server. Join thousands of satisfied customers worldwide.",
+                    cta_primary: "Browse Store",
+                    cta_secondary: "Join Discord"
                 },
+                stats: {
+                    customers: "Happy Customers",
+                    resources: "Premium Resources",
+                    servers: "Active Servers",
+                    support: "24/7 Support"
+                }
             },
             buttons: {
                 checkout: "Proceed to Checkout",
@@ -108,7 +130,7 @@ export default defineI18nConfig(() => ({
                 image_alt: "An image for the {name} category",
             },
         },
-        "de-DE": {
+        "tr": {
             store_name: "Beispiel Shop",
             play: "beispiel.shop.de",
             index: {
