@@ -571,7 +571,11 @@ const { data: categories } = await useAsyncData("categories", () => {
     .user-name {
         font-weight: 500;
         
-        @include tools.media-breakpoint-down("md") {
+        @include tools.media-breakpoint-up("md") {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
             display: none;
         }
     }
@@ -611,7 +615,7 @@ const { data: categories } = await useAsyncData("categories", () => {
     }
     
     .cart-text {
-        @include tools.media-breakpoint-down("sm") {
+        @media (max-width: 576px) {
             display: none;
         }
     }
